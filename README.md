@@ -33,10 +33,10 @@ cb_person_default_on_file, cb_person_cred_hist_length, and encoded categorical v
 
 ## Run the Project
 ```bash
-git clone https://github.com/Minahil-Abid/Credit-Scoring-Model.git
-cd Credit-Scoring-Model
+git clone https://github.com/Minahil-Abid/codealpha_task01.git
+cd codealpha_task01
 pip install -r requirements.txt
-jupyter notebook Credit_Scoring_Model.ipynb
+jupyter notebook codealpha_task01.ipynb
 ```
 
 ## License
