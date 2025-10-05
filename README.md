@@ -1,31 +1,45 @@
 # Credit Scoring Model
 
-This project predicts an individual's creditworthiness using financial data such as income, debt, and credit history.
+This project predicts an individual's creditworthiness based on financial and credit history data. By applying classification algorithms such as Logistic Regression, Decision Tree, and Random Forest, it demonstrates how machine learning can assist in risk assessment and loan decision-making for financial institutions.
 
-## Objective
-To build a machine learning model that classifies individuals as likely to default or not.
+## Features
+- Performed Exploratory Data Analysis (EDA) to understand distributions and correlations
+- Cleaned and preprocessed data (handled outliers, missing values, and categorical encoding)
+- Trained multiple classification models:
+  - Logistic Regression
+  - Decision Tree
+  - Random Forest
+- Compared model performance using Accuracy, Precision, Recall, F1-score, and ROC–AUC
+- Tuned hyperparameters to improve model robustness
+- Interpreted feature importance and key predictors of default risk
 
-## Models Used
-- Logistic Regression
-- Decision Tree
-- Random Forest
+## Dataset
+- **Source:** Public credit scoring dataset (simulated loan applicant data)
+- **Features:** person_income, person_emp_length, loan_amnt, loan_int_rate, loan_percent_income,
+cb_person_default_on_file, cb_person_cred_hist_length, and encoded categorical variables.
+- **Target:** loan_status → (1 = default, 0 = non-default)
 
-## Steps
-1. Data cleaning and preprocessing  
-2. Feature encoding and scaling  
-3. Model training and evaluation  
-4. Performance comparison using Accuracy, Precision, Recall, F1-score, and ROC–AUC
+## Models & Results
 
-## Results Summary
+| Model | Accuracy | Precision | Recall | F1-score | ROC–AUC |
+|--------|-----------|------------|----------|-----------|-----------|
+| Logistic Regression | 0.7846 | 0.5010 | 0.7680 | 0.6064 | 0.8523 |
+| Decision Tree | 0.8947 | 0.7540 | 0.7606 | 0.7573 | 0.8461 |
+| Tuned Decision Tree | 0.8895 | 0.7401 | 0.7526 | 0.7463 | 0.9008 |
+| **Random Forest** | **0.8971** | **0.7556** | **0.7739** | **0.7646** | **0.9253** |
 
-| Model | Accuracy | Recall | F1 | ROC–AUC |
-|--------|-----------|--------|-----|----------|
-| Logistic Regression | 0.78 | 0.77 | 0.61 | 0.80 |
-| Decision Tree | 0.89 | 0.75 | 0.75 | 0.90 |
-| Random Forest | 0.90 | 0.77 | 0.76 | 0.93 |
+✅ **Random Forest** achieved the best overall performance, with the highest ROC–AUC and balanced precision–recall, making it the most reliable model for predicting loan default risk.
 
-✅ Best Model: Random Forest (AUC = 0.93)
 
-## Requirements
+## Run the Project
 ```bash
+git clone https://github.com/Minahil-Abid/Credit-Scoring-Model.git
+cd Credit-Scoring-Model
 pip install -r requirements.txt
+jupyter notebook Credit_Scoring_Model.ipynb
+```
+
+## License
+
+MIT License – free to use and share.
+
