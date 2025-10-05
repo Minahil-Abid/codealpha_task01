@@ -15,9 +15,9 @@ This project predicts an individual's creditworthiness based on financial and cr
 
 ## Dataset
 - **Source:** Public credit scoring dataset (simulated loan applicant data)
-- **Features:** person_income, person_emp_length, loan_amnt, loan_int_rate, loan_percent_income,
-cb_person_default_on_file, cb_person_cred_hist_length, and encoded categorical variables.
-- **Target:** loan_status → (1 = default, 0 = non-default)
+- **Features:** `person_income`, `person_emp_length`, `loan_amnt`, `loan_int_rate`, `loan_percent_income`,
+`cb_person_default_on_file`, `cb_person_cred_hist_length`, and `encoded categorical variables`.
+- **Target:** `loan_status` → (1 = default, 0 = non-default)
 
 ## Models & Results
 
